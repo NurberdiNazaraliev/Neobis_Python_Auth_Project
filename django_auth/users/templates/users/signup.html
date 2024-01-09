@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+</head>
+<body>
+<h1>Register here</h1>
+<form method="POST" autocomplete="off">
+    {% csrf_token%}
+
+    {{signupform.as_p}}
+
+    <input type="submit" value="signup">
+</form>
+</body>
+</html>
